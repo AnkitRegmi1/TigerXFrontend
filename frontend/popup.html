@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="custom-div">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SImple extension</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body class="custom-div">
+<div class="custom-div">
+    <h2 id="lol">Community Notes</h2>
+    <!--        <li id="concerts"></li>-->
+    <p id="loader"></p>
+    <p id="context">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis est exercitationem,
+        inventore laudantium modi numquam optio perferendis, porro quae repellendus sunt voluptate voluptatum!
+        Consequatur harum optio quas repudiandae! Quas!
+    </p>
+
+    <br>
+
+    <form action="/submit" id="main-form">
+        <textarea placeholder="What do you think of this article?" id="textarea" required></textarea>
+        <button type="submit" id="helpful-btn">Helpful</button>
+        <button type="submit" id="misleading-btn">Misleading</button>
+    </form>
+</div>
+</body>
+<script src="script/popup.js"></script>
+<script src="script/background.js"></script>
+</html>

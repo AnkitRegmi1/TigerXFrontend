@@ -1,0 +1,95 @@
+/* Reset some default styles for the body and HTML */
+body.custom-div, html.custom-div {
+    margin: 0;
+    padding: 0;
+
+    min-width: 400px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Apply styles to the container div */
+div.custom-div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px; /* Increase the max-width to make it wider */
+    width: 100%;
+}
+
+
+.custom-div p {
+    font-size: 14px; /* Adjust the font size for better readability */
+    line-height: 1.5; /* Increase line height for better spacing */
+}
+
+/* Style the h2 */
+.custom-div h2 {
+    font-size: 20px; /* Slightly reduce the font size for smaller screens */
+    margin: 0;
+    padding: 10px;
+}
+
+/* Style the paragraph */
+#context {
+    margin: 10px 0;
+}
+
+/* Style the textarea for user input */
+.custom-div textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px; /* Reduce the font size for smaller screens */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+/* Style the submit buttons */
+.custom-div button {
+    background-color: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 10px 15px; /* Slightly reduce button padding for smaller screens */
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Reduce the font size for smaller screens */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.custom-div button:hover {
+    background-color: #0050a2;
+    transform: scale(1.05);
+}
+
+.custom-div button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0078d4;
+}
+
+/* Animation for the loading spinner */
+@keyframes loading-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Apply the loading spinner animation to the content element */
+#loader::before {
+    content: "";
+    border: 2px solid #ccc;
+    border-top: 2px solid #0078d4; /* Match your button color */
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: loading-spin 1s linear infinite;
+    display: inline-block;
+    margin-right: 5px;
+}

@@ -1,0 +1,4 @@
+flask==3.0.0
+openai~=0.28.1
+moviepy~=1.0.3
+pandas~=2.1.2
